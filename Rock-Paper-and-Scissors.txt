@@ -1,0 +1,60 @@
+# Making play again true so that it loops untill user presses N
+playAgain = True
+while playAgain:
+
+
+    # Importing random module
+    import random
+
+    # generating numbers between 1 to 3
+    computerChoice = random.randint(1,3)
+
+    # Asking for user input 
+    #Validate to ask input using while loop- only r, p and s
+    # Input only accepts lowercase r,p and s !!
+    userChoice = str(input("Choose (r)ock, (p)aper, (s)cissors: "))
+    while (userChoice != "r") and (userChoice != "p") and (userChoice != "s"):
+            userChoice = str(input("Choose (r)ock, (p)aper, (s)cissors: "))
+            
+
+
+    # Assigning the generated random numbers to rock / paper / scissors.
+    if computerChoice == 1:
+        print("Computer: rock")
+    elif computerChoice == 2:
+        print("Computer: paper")
+    else:
+        print("Computer: scissors")
+        
+
+
+    # Assigning user input with rock, paper, scissors
+    if userChoice == "r":
+        userChoice = 1
+        print("User: rock")
+    if userChoice == "p":
+        userChoice = 2
+        print("User: paper")
+    if userChoice == "s":
+        userChoice = 3
+        print("User: scissors")
+
+
+
+    if userChoice == computerChoice:
+        print("There is a tie")
+    elif userChoice > computerChoice:
+        print("You Win!")
+    else:
+        print("Computer wins!")
+
+    # Validate input to only Y and N using loop. only accepts lowercase y/n !!
+    playAgain = str(input("Play again (y)es (n)o? "))
+    while playAgain != "y" and playAgain != "n":
+        playAgain = str(input("Play again (y)es (n)o? "))
+
+    print("")
+    if playAgain == "n":
+        break
+print("")
+print("Thank You!")

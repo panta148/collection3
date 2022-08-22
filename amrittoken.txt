@@ -1,0 +1,38 @@
+https://stackoverflow.com/questions/47465644/github-remote-permission-denied
+....................................
+Multiple users generate their own ssh key
+...........................................
+
+
+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
+token for panta147 github acccount
+git pull origin master
+git push origin master
+
+................................................
+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
+token for pythonpanta github acccount
+git pull origin master
+git push origin master
+
+
+..........................................
+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
+token for reactamrit github acccount
+git pull origin master
+git push origin master
+
+
+......................................
+step to follow
+1.goto control panel,credential settiing
+2.delete the oolder giithub account
+3.git init
+3.git add .
+4.git status
+5.git commit -m "message"
+6.git remote add origin url
+7.git pull origin master
+8.git push origin master
+then enter the username,password then 
+enter the SRl token code and the password ...

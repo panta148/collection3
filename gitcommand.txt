@@ -1,0 +1,43 @@
+register user name and email
+->git config --global user.name
+->git config -global user.email
+
+basic git command
+->git config --list
+->ctrl+l #for clearing the screen
+->git init
+->git status
+->git add filename.txt
+->git add filename1 filename2
+->git add . 
+->git commit -m "message"#for commiting the repo
+->git commit -am"message" #for commmiting and adding 
+->git log #view the commit history
+->git log --oneline
+->git checkout
+->git checkout master #to change the other branch to master branch
+->git branch -m master main #to change master branch to main
+->git checkout fvalue
+
+command for push the repo to the online
+->git remote url
+->git remote add origin https://github.com/reactamrit/calculator.git
+->git push origin master
+
+
+...........................
+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
+https://netflix-clone-959e7.firebaseapp.com/
+https://netflix-clone-959e7.web.app/
+
+
+
+
+
+
+
+
+
+
+   
+    

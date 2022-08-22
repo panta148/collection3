@@ -1,0 +1,44 @@
+document.getElementById('btn').addEventListener('click', clickbtn);
+async function clickbtn() {
+    console.log('btn click');
+    const api = '4c800a0d012b3d68253ad8f28e4ac840'
+    let url = `https://api.themoviedb.org/3/movie/550?api_key=${api}&callback=test`
+    await axios(url).then((res) => {
+        console.log(res)
+        console.log(res.data)
+
+    }).catch((error) => {
+        console.log(error)
+    })
+}
+
+
+
+<script>
+    var i=0;
+    var images=[];
+    var time=3000;
+    images[0]="images/1.1.png";
+    images[1]="images/2.png";
+    images[2]="images/3.png";
+    // change images
+    function changeImg(){
+document.slide.src=images[i];
+if(i<images.length-1){
+    i++;
+}
+else{
+    i=0;
+}
+setTimeout("changeImg()",time);
+    }
+    window.onload=changeImg();
+</script>
+
+
+#feature .fea-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
